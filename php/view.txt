@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Upload Form</title>
+</head>
+<body>
+<h2>Upload File</h2>
+<h3>usage</h3>
+<?php echo $error;?>
+
+<?php echo form_open_multipart('upload/do_upload');?>
+
+<input type="file" name="userfile" size="1024" />
+
+<br /><br />
+
+<?php echo form_open_multipart('upload/do_encode');?>
+<input type="submit" value="upload" />
+
+</form>
+</body>
+</html>
+
+
+//succes
+<html>
+<head>
+<title>Upload Complete</title>
+</head>
+<body>
+
+<h3>Your file was successfully uploaded!</h3>
+
+<ul>
+<?php foreach ($upload_data as $item => $value):?>
+<li><?php echo $item;?>: <?php echo $value;?></li>
+<?php endforeach; ?>
+</ul>
+
+<p><?php echo anchor('upload', 'Upload Another File!'); ?></p>
+
+//分散処理
+<?php
+
+?>
+</body>
+</html>

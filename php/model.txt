@@ -1,0 +1,26 @@
+<?php
+ class Model extends CI_Model {
+
+  public function __construct() {
+   $this->load->database();
+  }
+  
+  public function set() {
+   $data =array(
+	'name' => $this->input->post('title'),
+	'width'=> $this->input->post('image_width'),
+	'height'=> $this->input->post('image_height'),
+	'id'=> uniqid()
+	);
+   return $this->db>insert('testdb',$data);
+  }
+
+  public function e_set() {
+   $data = arry(
+	'name' => $this->input->post(''),
+	'size'=> $this->input->post(''),
+	'data'=> $this->input->post(''),
+    'time'=> $_SERVER[‘REQUEST_TIME’]
+	);
+    returb $this->db->insert('testdb',$data);
+ }
