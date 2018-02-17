@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Upload Form</title>
+<title>アップロードフォーム</title>
 </head>
 <body>
 
@@ -8,7 +8,7 @@
 
 <?php echo form_open_multipart('upload/do_upload');?>
 
-<input type="file" name="userfile" size="20" />
+<input type="file" name="userfile" size="2048" />
 
 <br /><br />
 
