@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>TEST(HLS)</title>
+  </head>
+  <body>
+    <header>
+      <h1>Test(hls)</h1>
+    </header>
+    <div>
+      <video width="1280" height="720" src="plylst1.m3u8" preload="none" onclick="this.play()" controls />
+    /div>
+  </body>
+</html>
